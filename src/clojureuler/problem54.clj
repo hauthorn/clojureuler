@@ -275,5 +275,5 @@
              (mapv map-hand (line-seq rdr))))
 
 (defn main-
-  [& args]
+  [& _]
   (println "Wins: " (count (filter true? (map #(winning-hand? (first %) (second %)) hands)))))
